@@ -1,5 +1,7 @@
 # Duplicate Material Detection: Evaluation Suite
 
+[![Eval suite tests](https://github.com/piyush3589/material-dedupe-eval/actions/workflows/ci.yml/badge.svg)](https://github.com/piyush3589/material-dedupe-eval/actions/workflows/ci.yml)
+
 A test harness that measures how well a matcher decides whether two spare-part (MRO) descriptions
 refer to the same item. It scores any matcher the same way, so a rule-based baseline and an LLM can be
 compared on identical data, and a change to a prompt, a model or a rule can be checked for regressions.
@@ -182,3 +184,7 @@ formula), and it was rewritten with an asymmetric example.
 - A parts-classification task (assign a category to each description) using the same harness.
 - Track scores per release in a CSV so accuracy over time can be charted.
 - Larger pairs set including near-miss part numbers generated from real standards.
+
+## Author
+
+Piyush Raut | [GitHub](https://github.com/piyush3589) | [LinkedIn](https://linkedin.com/in/piyushr30) | piyush318@gmail.com
