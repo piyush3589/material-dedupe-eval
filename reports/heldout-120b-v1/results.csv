@@ -1,0 +1,13 @@
+id,category,label,pred,correct,a,b,reason
+XN01,different_material,0,0,1,WASHER FLAT M10 SS304,WASHER FLAT M10 SS316,Different stainless steel grades (304 vs 316)
+XN02,different_rating,0,0,1,CONTACTOR 3P 25A 24VDC,CONTACTOR 3P 25A 24VAC,"Different voltage type: one is 24VDC, the other 24VAC"
+XN03,different_size,0,0,1,COUPLING FLEXIBLE LOVEJOY L100 3/4 IN BORE,COUPLING FLEXIBLE LOVEJOY L100 1 IN BORE,"Different bore sizes (3/4"" vs 1"")"
+XN04,different_type,0,0,1,ELBOW 90DEG LR 3IN SCH40 CS BW,ELBOW 90DEG SR 3IN SCH40 CS BW,LR (long radius) vs SR (short radius) indicates different elbow geometry
+XN05,different_part_number,0,0,1,V-BELT B68,V-BELT BX68,"The part numbers differ (B68 vs BX68), indicating distinct belt specifications."
+XN06,different_type,0,0,1,TRANSMITTER PRESSURE 0-10 BAR 4-20MA HART,TRANSMITTER PRESSURE 0-10 BAR 4-20MA,"A includes HART protocol while B does not, indicating different specifications"
+XP01,unit_notation,1,1,1,FILTER ELEMENT HYDRAULIC 10 MICRON PARKER,PARKER HYDRAULIC FILTER ELEMENT 10 UM,Both describe a Parker hydraulic filter element with a 10 micron rating
+XP02,abbreviation,1,1,1,CONTACTOR 3P 25A 24VDC,CONTACTOR 3 POLE 25 AMP 24 V DC,Both describe a 3‑pole (3P) contactor rated 25 A at 24 VDC
+XP03,abbreviation,1,1,1,ELBOW 90DEG LR 3IN SCH40 CS BW,ELBOW 90 DEG LONG RADIUS 3 IN SCH 40 CARBON STEEL BUTT WELD,"Both describe a 90° long‑radius, 3"" Schedule 40 carbon‑steel butt‑weld elbow"
+XP04,synonym,1,1,1,GREASE LITHIUM EP2 18KG PAIL,GREASE LI EP-2 18 KG BUCKET,Both describe 18 kg lithium EP‑2 grease; only the container wording (pail vs bucket) differs.
+XP05,part_number_format,1,1,1,SWITCH LIMIT OMRON WLCA2,LIMIT SWITCH OMRON WL-CA2,"Both refer to OMRON limit switch part WLCA2, differing only in word order and hyphen placement"
+XP06,unit_notation,1,1,1,HOSE HYDRAULIC 1/2 IN 2SN,"HYDRAULIC HOSE 1/2"" 2SN","Both describe a 1/2"" hydraulic hose with 2SN construction, just worded differently."

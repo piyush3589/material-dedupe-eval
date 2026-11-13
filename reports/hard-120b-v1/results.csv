@@ -1,0 +1,25 @@
+id,category,label,pred,correct,a,b,reason
+HN01,different_material,0,0,1,PIPE SS 304 SCH40 2IN 6M,PIPE SS 304L SCH40 2IN 6M,"One specifies stainless steel grade 304, the other 304L (low‑carbon variant), which are distinct materials"
+HN02,different_thread_pitch,0,0,1,BOLT HEX M12X1.5X60 SS,BOLT HEX M12X1.75X60 SS,Different thread pitch (1.5 vs 1.75)
+HN03,different_seal_type,0,0,1,BEARING BALL 6205-2RS SKF,BEARING BALL 6205-2Z SKF,"Different seal type: 2RS has rubber seals, 2Z has metal shields"
+HN04,different_face_type,0,0,1,FLANGE WN 4IN 150# RF CS,FLANGE WN 4IN 150# FF CS,RF (raised face) and FF (flat face) denote different flange face types
+HN05,different_part_number,0,0,1,GASKET RING JOINT R-24 SS316,GASKET RING JOINT R-25 SS316,"The part numbers differ (R-24 vs R-25), indicating distinct items."
+HN06,different_type,0,0,1,FUSE CARTRIDGE 10A 250V GG,FUSE CARTRIDGE 10A 250V AM,Different model codes (GG vs AM) indicate distinct variants despite same rating
+HN07,different_rating,0,0,1,MOTOR ELECTRIC 3PH 5.5KW 4P 415V,MOTOR ELECTRIC 3PH 5.5KW 2P 415V,Different pole count (4P vs 2P) means different speed and design
+HN08,different_type,0,0,1,HOSE HYDRAULIC 1/2 IN 2SN,HOSE HYDRAULIC 1/2 IN 1SN,Different number of sections (2SN vs 1SN)
+HN09,different_type,0,0,1,VALVE BALL 2IN 150# SS316 FLANGED FULL BORE,VALVE BALL 2IN 150# SS316 FLANGED REDUCED BORE,"One is full bore while the other is reduced bore, indicating different valve configurations"
+HN10,different_material,0,0,1,PUMP SEAL MECHANICAL 40MM JOHN CRANE 2100 VITON,PUMP SEAL MECHANICAL 40MM JOHN CRANE 2100 EPDM,Different seal material (Viton vs EPDM)
+HN11,different_material,0,0,1,CABLE POWER 3CORE 2.5MM2 CU PVC 1.1KV,CABLE POWER 3CORE 2.5MM2 AL PVC 1.1KV,"Different conductor material: one is copper (CU), the other is aluminum (AL)"
+HN12,different_rating,0,0,1,LAMP LED 150W 220V E40 6500K,LAMP LED 150W 220V E40 4000K,Different color temperature (6500K vs 4000K)
+HP01,synonym,1,1,1,WRENCH SPANNER COMBINATION 17MM,SPANNER COMBINATION 17 MM,Both describe a 17 mm combination spanner/wrench
+HP02,typo,1,1,1,BEARING BALL 6205-2RS SKF,BERING BALL 6205 2RS SKF,Both describe an SKF 6205 bearing with 2RS seals; second entry has a typo but matches the same part
+HP03,unit_conversion,1,1,1,PIPE SS 304 SCH40 2IN 6M,PIPE STAINLESS STEEL AISI 304 SCH 40 50 MM NB 6 METER,"Both describe 304 stainless steel schedule 40 pipe, 2 in (≈50 mm) diameter, 6 m length"
+HP04,abbreviation,1,1,1,FLANGE WN 4IN 150# RF CS,FLANGE WELD NECK 4 INCH CLASS 150 RAISED FACE CARBON STEEL,"Both describe a 4"" weld neck flange, class 150, raised face, carbon steel"
+HP05,abbreviation,1,1,1,MOTOR ELECTRIC 3PH 5.5KW 4P 415V,ELECTRIC MOTOR 3 PHASE 5.5 KW 4 POLE 415 VOLT,Both describe a 3‑phase 5.5 kW electric motor with 4 poles operating at 415 V; wording differs but specs match.
+HP06,word_order,1,1,1,TRANSMITTER PRESSURE 0-10 BAR 4-20MA HART,PRESSURE TRANSMITTER 0 TO 10 BAR 4 TO 20 MA HART PROTOCOL,"Both describe a 0-10 bar pressure transmitter with 4‑20 mA output and HART protocol, just worded differently."
+HP07,formatting,1,1,1,GASKET SPIRAL WOUND 4IN 150# SS316,GASKET SPIRAL-WOUND 4IN CLASS 150 SS 316,"Both describe a 4"" spiral-wound gasket, class/150#, made of SS316 stainless steel"
+HP08,unit_conversion,1,1,1,VALVE BALL 2IN 150# SS316 FLANGED FULL BORE,BALL VALVE DN50 CLASS 150 SS316 FLANGED FULL BORE,"Both describe a 2"" (DN50) SS316 full‑bore flanged ball valve, class 150"
+HP09,unit_notation,1,1,1,CABLE POWER 3CORE 2.5MM2 CU PVC 1.1KV,CABLE POWER 3 X 2.5 SQMM COPPER PVC 1100V,"Both describe a 3‑core, 2.5 mm² copper PVC power cable rated at 1.1 kV"
+HP10,unit_notation,1,1,1,FUSE CARTRIDGE 10A 250V GG,CARTRIDGE FUSE 10 AMP 250 VOLT gG,"Both describe a 10 A, 250 V cartridge fuse with the GG rating, just worded differently."
+HP11,synonym,1,1,1,WASHER FLAT M10 SS316,WASHER PLAIN M10 STAINLESS STEEL 316,Both describe a flat/plain M10 washer made of stainless steel grade 316
+HP12,abbreviation,1,1,1,PUMP SEAL MECHANICAL 40MM JOHN CRANE 2100 VITON,MECH SEAL 40MM J/CRANE 2100 VITON,Both describe a 40mm John Crane 2100 mechanical seal made of Viton; wording differs but specs match.

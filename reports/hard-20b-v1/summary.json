@@ -1,0 +1,13 @@
+{
+  "matcher": "llm-groq-openai/gpt-oss-20b-v1",
+  "tp": 11,
+  "fp": 0,
+  "fn": 1,
+  "tn": 12,
+  "accuracy": 0.9583333333333334,
+  "precision": 1.0,
+  "recall": 0.9166666666666666,
+  "f1": 0.9565217391304348,
+  "unusable_answers": 0,
+  "pairs": 24
+}

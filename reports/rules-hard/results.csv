@@ -1,0 +1,25 @@
+id,category,label,pred,correct,a,b,reason
+HN01,different_material,0,0,1,PIPE SS 304 SCH40 2IN 6M,PIPE SS 304L SCH40 2IN 6M,numeric attributes differ: ['304L']
+HN02,different_thread_pitch,0,0,1,BOLT HEX M12X1.5X60 SS,BOLT HEX M12X1.75X60 SS,"numeric attributes differ: ['15', '175']"
+HN03,different_seal_type,0,0,1,BEARING BALL 6205-2RS SKF,BEARING BALL 6205-2Z SKF,"numeric attributes differ: ['2RS', '2Z']"
+HN04,different_face_type,0,1,0,FLANGE WN 4IN 150# RF CS,FLANGE WN 4IN 150# FF CS,"numbers agree, word overlap 0.78"
+HN05,different_part_number,0,0,1,GASKET RING JOINT R-24 SS316,GASKET RING JOINT R-25 SS316,"numeric attributes differ: ['24', '25']"
+HN06,different_type,0,1,0,FUSE CARTRIDGE 10A 250V GG,FUSE CARTRIDGE 10A 250V AM,"numbers agree, word overlap 0.67"
+HN07,different_rating,0,0,1,MOTOR ELECTRIC 3PH 5.5KW 4P 415V,MOTOR ELECTRIC 3PH 5.5KW 2P 415V,numeric attributes differ: ['2']
+HN08,different_type,0,0,1,HOSE HYDRAULIC 1/2 IN 2SN,HOSE HYDRAULIC 1/2 IN 1SN,"numeric attributes differ: ['1SN', '2SN']"
+HN09,different_type,0,1,0,VALVE BALL 2IN 150# SS316 FLANGED FULL BORE,VALVE BALL 2IN 150# SS316 FLANGED REDUCED BORE,"numbers agree, word overlap 0.80"
+HN10,different_material,0,1,0,PUMP SEAL MECHANICAL 40MM JOHN CRANE 2100 VITON,PUMP SEAL MECHANICAL 40MM JOHN CRANE 2100 EPDM,"numbers agree, word overlap 0.75"
+HN11,different_material,0,1,0,CABLE POWER 3CORE 2.5MM2 CU PVC 1.1KV,CABLE POWER 3CORE 2.5MM2 AL PVC 1.1KV,"numbers agree, word overlap 0.67"
+HN12,different_rating,0,0,1,LAMP LED 150W 220V E40 6500K,LAMP LED 150W 220V E40 4000K,"numeric attributes differ: ['4000K', '6500K']"
+HP01,synonym,1,1,1,WRENCH SPANNER COMBINATION 17MM,SPANNER COMBINATION 17 MM,"numbers agree, word overlap 0.75"
+HP02,typo,1,0,0,BEARING BALL 6205-2RS SKF,BERING BALL 6205 2RS SKF,word overlap 0.50 < 0.6
+HP03,unit_conversion,1,0,0,PIPE SS 304 SCH40 2IN 6M,PIPE STAINLESS STEEL AISI 304 SCH 40 50 MM NB 6 METER,"numeric attributes differ: ['2', '50']"
+HP04,abbreviation,1,1,1,FLANGE WN 4IN 150# RF CS,FLANGE WELD NECK 4 INCH CLASS 150 RAISED FACE CARBON STEEL,"numbers agree, word overlap 0.70"
+HP05,abbreviation,1,0,0,MOTOR ELECTRIC 3PH 5.5KW 4P 415V,ELECTRIC MOTOR 3 PHASE 5.5 KW 4 POLE 415 VOLT,word overlap 0.43 < 0.6
+HP06,word_order,1,1,1,TRANSMITTER PRESSURE 0-10 BAR 4-20MA HART,PRESSURE TRANSMITTER 0 TO 10 BAR 4 TO 20 MA HART PROTOCOL,"numbers agree, word overlap 0.83"
+HP07,formatting,1,1,1,GASKET SPIRAL WOUND 4IN 150# SS316,GASKET SPIRAL-WOUND 4IN CLASS 150 SS 316,"numbers agree, word overlap 1.00"
+HP08,unit_conversion,1,0,0,VALVE BALL 2IN 150# SS316 FLANGED FULL BORE,BALL VALVE DN50 CLASS 150 SS316 FLANGED FULL BORE,"numeric attributes differ: ['2', 'DN50']"
+HP09,unit_notation,1,0,0,CABLE POWER 3CORE 2.5MM2 CU PVC 1.1KV,CABLE POWER 3 X 2.5 SQMM COPPER PVC 1100V,"numeric attributes differ: ['1100', '11KV', 'MM2']"
+HP10,unit_notation,1,0,0,FUSE CARTRIDGE 10A 250V GG,CARTRIDGE FUSE 10 AMP 250 VOLT gG,word overlap 0.43 < 0.6
+HP11,synonym,1,1,1,WASHER FLAT M10 SS316,WASHER PLAIN M10 STAINLESS STEEL 316,"numbers agree, word overlap 0.60"
+HP12,abbreviation,1,0,0,PUMP SEAL MECHANICAL 40MM JOHN CRANE 2100 VITON,MECH SEAL 40MM J/CRANE 2100 VITON,word overlap 0.33 < 0.6

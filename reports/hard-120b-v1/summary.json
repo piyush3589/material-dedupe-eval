@@ -1,0 +1,13 @@
+{
+  "matcher": "llm-groq-openai/gpt-oss-120b-v1",
+  "tp": 12,
+  "fp": 0,
+  "fn": 0,
+  "tn": 12,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "unusable_answers": 0,
+  "pairs": 24
+}

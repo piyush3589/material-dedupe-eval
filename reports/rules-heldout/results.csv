@@ -1,0 +1,13 @@
+id,category,label,pred,correct,a,b,reason
+XN01,different_material,0,0,1,WASHER FLAT M10 SS304,WASHER FLAT M10 SS316,"numeric attributes differ: ['304', '316']"
+XN02,different_rating,0,1,0,CONTACTOR 3P 25A 24VDC,CONTACTOR 3P 25A 24VAC,"numbers agree, word overlap 0.60"
+XN03,different_size,0,0,1,COUPLING FLEXIBLE LOVEJOY L100 3/4 IN BORE,COUPLING FLEXIBLE LOVEJOY L100 1 IN BORE,numeric attributes differ: ['34']
+XN04,different_type,0,1,0,ELBOW 90DEG LR 3IN SCH40 CS BW,ELBOW 90DEG SR 3IN SCH40 CS BW,"numbers agree, word overlap 0.78"
+XN05,different_part_number,0,0,1,V-BELT B68,V-BELT BX68,"numeric attributes differ: ['B68', 'BX68']"
+XN06,different_type,0,1,0,TRANSMITTER PRESSURE 0-10 BAR 4-20MA HART,TRANSMITTER PRESSURE 0-10 BAR 4-20MA,"numbers agree, word overlap 0.80"
+XP01,unit_notation,1,1,1,FILTER ELEMENT HYDRAULIC 10 MICRON PARKER,PARKER HYDRAULIC FILTER ELEMENT 10 UM,"numbers agree, word overlap 0.67"
+XP02,abbreviation,1,0,0,CONTACTOR 3P 25A 24VDC,CONTACTOR 3 POLE 25 AMP 24 V DC,word overlap 0.29 < 0.6
+XP03,abbreviation,1,1,1,ELBOW 90DEG LR 3IN SCH40 CS BW,ELBOW 90 DEG LONG RADIUS 3 IN SCH 40 CARBON STEEL BUTT WELD,"numbers agree, word overlap 0.64"
+XP04,synonym,1,0,0,GREASE LITHIUM EP2 18KG PAIL,GREASE LI EP-2 18 KG BUCKET,word overlap 0.29 < 0.6
+XP05,part_number_format,1,1,1,SWITCH LIMIT OMRON WLCA2,LIMIT SWITCH OMRON WL-CA2,"numbers agree, word overlap 0.75"
+XP06,unit_notation,1,1,1,HOSE HYDRAULIC 1/2 IN 2SN,"HYDRAULIC HOSE 1/2"" 2SN","numbers agree, word overlap 1.00"
