@@ -64,6 +64,25 @@ LLM results on the hard and held-out sets are not recorded yet.
 - `CAT` is not recognised as Caterpillar.
 - Gate valve vs globe valve looks similar to it, because the type is only one word.
 
+### The two prompts
+
+| | v1 | v2 |
+|---|---|---|
+| Idea | Ask plainly | State the matching rules |
+| Rules given | None | Every attribute must match; word order, abbreviations, punctuation, case and unit notation do not count as differences |
+| When unsure | Not stated | Answer false |
+
+**v1:** "Are these two spare-part descriptions the same item?" The model replies with JSON only:
+`{"duplicate": true or false, "reason": "short reason"}`.
+
+**v2** tells the model that every technical attribute (type, size, pressure rating, material,
+grade, voltage, length, part number, manufacturer) must match, lists which differences do not
+matter, and says: "If an attribute differs or you are unsure, answer false."
+
+**Why v2 lowered recall:** the typo pair `BEARING` vs `BERING` (HP02) is not on v2's list of
+allowed differences, so v2 answered false for a pair labelled as a duplicate. Precision stayed at
+1.000. This is one pair, so it shows how the prompt can change results but does not prove it.
+
 ## How I checked the tests
 
 I broke the code on purpose (for example, swapping the precision and recall formulas)
