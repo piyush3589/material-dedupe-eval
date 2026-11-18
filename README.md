@@ -82,8 +82,7 @@ python -m dedupe.run --matcher rules --out reports/rules
 - Small and made up by one person. 96 pairs, not customer data.
 - No domain expert has reviewed the labels.
 - The baseline's abbreviation list was written knowing the data, so its score is optimistic.
-- The repository's tests use a fake model. [LLM run: write here only what you actually did, for example "The Groq easy-set run was done locally."]
-
+- The repository's tests use a fake model. 
 ## Roadmap
 
 - A bigger held-out set labelled by a second person.
