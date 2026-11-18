@@ -43,6 +43,16 @@ The rules-based baseline scored:
 | Held-out | 12 | 3 + 2 = 5 | 7 | 0.583 |
 
 These numbers are for the rules baseline only.
+### Hard set results (24 pairs)
+
+| Matcher | Accuracy | F1 | False alarms | Missed duplicates |
+|---|---|---|---|---|
+| Rules baseline | 0.500 | 0.455 | 5 | 7 |
+| LLM, prompt v1 (`gpt-oss-120b`) | 1.000 | 1.000 | 0 | 0 |
+| LLM, prompt v2 (`gpt-oss-120b`) | 0.958 | 0.957 | 0 | 1 |
+
+For the LLM runs, precision was 1.000 for both prompts. Recall was 1.000 for v1 and 0.917 for v2.
+v2 missed one pair (HP02: `BEARING` vs `BERING`).
 
 An LLM scored 1.000 on the easy set with both prompts. A test that everything passes
 cannot tell systems apart, so I added the hard set. On it, the baseline falls from
