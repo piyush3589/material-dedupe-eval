@@ -97,10 +97,6 @@ matter, and says: "If an attribute differs or you are unsure, answer false."
 allowed differences, so v2 answered false for a pair labelled as a duplicate. Precision stayed at
 1.000. This is one pair, so it shows how the prompt can change results but does not prove it.
 
-## How I checked the tests
-
-I broke the code on purpose (for example, swapping the precision and recall formulas)
-and confirmed that tests failed. One test was too weak, so I rewrote it.
 
 ## Quick start
 
