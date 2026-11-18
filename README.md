@@ -50,6 +50,14 @@ cannot tell systems apart, so I added the hard set. On it, the baseline falls fr
 
 LLM results on the hard and held-out sets are not recorded yet.
 
+### What the rules baseline does
+
+| Step | What it does | Example |
+|---|---|---|
+| Clean the text | Ignore case and punctuation, expand abbreviations, split `10mm` into `10 mm` | `6205-2RS` and `6205 2RS` look the same |
+| Match numbers | Every number in one description must appear in the other | `6205` vs `6305` is a different part |
+| Check word overlap | Remaining words must overlap above a threshold | Gate valve vs globe valve still overlaps too much, so it gives a false alarm |
+
 ## Where the baseline fails
 
 - `2 IN` and `50 MM` are not treated as the same size.
