@@ -34,11 +34,15 @@ tool counts the two kinds of mistakes separately.
 
 The rules-based baseline scored:
 
-| Dataset | Accuracy | False alarms | Missed duplicates |
-|---|---|---|---|
-| Easy (60) | 0.883 | 3 | 4 |
-| Hard (24) | 0.500 | 5 | 7 |
-| Held-out (12) | 0.583 | 3 | 2 |
+### How the accuracy numbers add up
+
+| Dataset | Pairs | Wrong (false alarms + missed) | Correct | Accuracy |
+|---|---|---|---|---|
+| Easy | 60 | 3 + 4 = 7 | 53 | 0.883 |
+| Hard | 24 | 5 + 7 = 12 | 12 | 0.500 |
+| Held-out | 12 | 3 + 2 = 5 | 7 | 0.583 |
+
+These numbers are for the rules baseline only.
 
 An LLM scored 1.000 on the easy set with both prompts. A test that everything passes
 cannot tell systems apart, so I added the hard set. On it, the baseline falls from
